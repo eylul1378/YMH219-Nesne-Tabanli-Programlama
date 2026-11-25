@@ -338,6 +338,7 @@ partial class AnaForm
         pnlButonlar.Padding = new Padding(0, 4, 0, 0);
         pnlButonlar.Size = new Size(624, 42);
         pnlButonlar.TabIndex = 3;
+        pnlButonlar.WrapContents = false;
         //
         // btnYeni
         //
@@ -386,7 +387,7 @@ partial class AnaForm
         chkOtomatikKaydet.Margin = new Padding(12, 9, 3, 3);
         chkOtomatikKaydet.Name = "chkOtomatikKaydet";
         chkOtomatikKaydet.TabIndex = 4;
-        chkOtomatikKaydet.Text = "Her işlemden sonra dosyaya otomatik kaydet";
+        chkOtomatikKaydet.Text = "Otomatik kaydet";
         chkOtomatikKaydet.UseVisualStyleBackColor = true;
         //
         // AnaForm
