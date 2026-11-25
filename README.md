@@ -17,8 +17,16 @@ Her proje klasöründe kendi çözüm dosyası (`.sln`), `.gitignore` ve `README
 ## Genel Gereksinimler
 
 - Windows 10/11
-- Visual Studio 2022 / 2026 (".NET masaüstü geliştirme" iş yükü)
-- .NET 10 SDK
+- **.NET 10 SDK** (projeler `net10.0-windows` hedefler)
+- **Visual Studio 2026** (".NET masaüstü geliştirme" iş yükü)
+
+> **Not:** Visual Studio 2022, .NET 10 projelerini resmî olarak desteklemez. Visual Studio 2026 yoksa,
+> [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) kurulduktan sonra projeler komut satırından
+> çalıştırılabilir, örneğin:
+>
+> ```bash
+> dotnet run --project YMH219-NotepadApp/NotepadApp
+> ```
 
 ## Öğrenci
 
