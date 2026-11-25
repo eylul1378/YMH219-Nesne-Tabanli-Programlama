@@ -38,7 +38,7 @@ OrnekVeri/                    → Demo için yapay zekâ ile üretilmiş (gerçe
 
 ## Kurulum ve Çalıştırma
 
-1. Depoyu klonlayın: `git clone https://github.com/eylul1378/NTP-Projelerim.git`
+1. Depoyu klonlayın: `git clone https://github.com/eylul1378/YMH219-Nesne-Tabanli-Programlama.git`
 2. `YMH219-FaceRecognition/FaceRecognition.sln` dosyasını Visual Studio ile açın (NuGet paketleri otomatik yüklenir).
 3. **F5** ile çalıştırın.
 

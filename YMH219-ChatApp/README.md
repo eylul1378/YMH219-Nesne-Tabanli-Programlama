@@ -47,7 +47,7 @@ Her mesaj tek satırlık bir JSON nesnesidir, örneğin:
 
 ## Kurulum ve Çalıştırma
 
-1. Depoyu klonlayın: `git clone https://github.com/eylul1378/NTP-Projelerim.git`
+1. Depoyu klonlayın: `git clone https://github.com/eylul1378/YMH219-Nesne-Tabanli-Programlama.git`
 2. `YMH219-ChatApp/ChatApp.sln` dosyasını Visual Studio ile açın.
 3. Çözüme sağ tıklayın → **Configure Startup Projects** → **Multiple startup projects** →
    `ChatServer` ve `ChatClient` için **Start** seçin. **F5** ile çalıştırın.

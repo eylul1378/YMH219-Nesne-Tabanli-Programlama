@@ -36,7 +36,7 @@ KeyEventLogger/
 
 ## Kurulum ve Çalıştırma
 
-1. Depoyu klonlayın: `git clone https://github.com/eylul1378/NTP-Projelerim.git`
+1. Depoyu klonlayın: `git clone https://github.com/eylul1378/YMH219-Nesne-Tabanli-Programlama.git`
 2. `YMH219-KeyEventLogger/KeyEventLogger.sln` dosyasını Visual Studio ile açın.
 3. **F5** ile çalıştırın.
 

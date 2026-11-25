@@ -1,4 +1,4 @@
-# NTP Projelerim — YMH 219 Nesne Tabanlı Programlama
+# YMH219 - Nesne Tabanlı Programlama
 
 Bu depo, **YMH 219 Nesne Tabanlı Programlama** dersi kapsamında verilen ek uygulama ödevlerini içerir.
 Tüm projeler **C# / .NET / Windows Forms** ile Visual Studio üzerinde geliştirilmiştir.
