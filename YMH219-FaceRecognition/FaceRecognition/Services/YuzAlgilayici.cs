@@ -50,7 +50,7 @@ public sealed class YuzAlgilayici : IDisposable
         using var gri = GriTonla(goruntu);
         Cv2.EqualizeHist(gri, gri);
         int enKucuk = Math.Max(40, Math.Min(gri.Width, gri.Height) / 10);
-        return _siniflandirici.DetectMultiScale(gri, scaleFactor: 1.1, minNeighbors: 5,
+        return _siniflandirici.DetectMultiScale(gri, scaleFactor: 1.1, minNeighbors: 7,
             flags: HaarDetectionTypes.ScaleImage, minSize: new Size(enKucuk, enKucuk));
     }
 
