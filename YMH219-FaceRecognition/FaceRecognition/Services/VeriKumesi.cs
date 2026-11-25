@@ -46,7 +46,7 @@ public class VeriKumesi
     /// <summary>Etiketleri ve her etiketteki örnek sayısını döndürür.</summary>
     public Dictionary<string, int> EtiketSayilari() =>
         Directory.GetDirectories(OrnekKlasoru)
-            .ToDictionary(Path.GetFileName!, k => Directory.GetFiles(k, "*.png").Length)
+            .ToDictionary(k => Path.GetFileName(k), k => Directory.GetFiles(k, "*.png").Length)
             .Where(x => x.Value > 0)
             .OrderBy(x => x.Key)
             .ToDictionary(x => x.Key, x => x.Value);
