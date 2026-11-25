@@ -33,7 +33,9 @@ public static class ModelYoneticisi
             Path.Combine(ModelKlasoru, model.KlasorAdi),
             Path.Combine(AppContext.BaseDirectory, "Models", model.KlasorAdi)
         };
-        return adaylar.FirstOrDefault(k => File.Exists(Path.Combine(k, "am", "final.mdl")));
+        // Model yapısı sürüme göre değişebilir: final.mdl ana klasörde veya "am" alt klasöründe olabilir.
+        return adaylar.FirstOrDefault(k =>
+            File.Exists(Path.Combine(k, "final.mdl")) || File.Exists(Path.Combine(k, "am", "final.mdl")));
     }
 
     /// <summary>Modeli indirir ve açar. İlerleme 0-100 arası bildirilir.</summary>
