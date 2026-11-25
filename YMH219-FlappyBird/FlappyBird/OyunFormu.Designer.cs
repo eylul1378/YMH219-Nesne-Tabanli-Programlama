@@ -1,4 +1,4 @@
-namespace FlappyBird;
+﻿namespace FlappyBird;
 
 partial class OyunFormu
 {
@@ -52,7 +52,7 @@ partial class OyunFormu
         pnlUst.Dock = DockStyle.Top;
         pnlUst.Name = "pnlUst";
         pnlUst.Padding = new Padding(6, 6, 6, 0);
-        pnlUst.Size = new Size(800, 44);
+        pnlUst.Size = new Size(880, 44);
         pnlUst.TabIndex = 0;
         pnlUst.WrapContents = false;
         //
@@ -146,7 +146,7 @@ partial class OyunFormu
         oyunPaneli.BackColor = Color.SkyBlue;
         oyunPaneli.Dock = DockStyle.Fill;
         oyunPaneli.Name = "oyunPaneli";
-        oyunPaneli.Size = new Size(800, 520);
+        oyunPaneli.Size = new Size(880, 520);
         oyunPaneli.TabIndex = 1;
         oyunPaneli.Paint += oyunPaneli_Paint;
         oyunPaneli.MouseDown += oyunPaneli_MouseDown;
@@ -157,7 +157,7 @@ partial class OyunFormu
         lblYardim.Dock = DockStyle.Bottom;
         lblYardim.ForeColor = Color.LightGray;
         lblYardim.Name = "lblYardim";
-        lblYardim.Size = new Size(800, 24);
+        lblYardim.Size = new Size(880, 24);
         lblYardim.Text = "  Kontroller:  SPACE / ↑ / Fare tıklaması = Zıpla     P = Duraklat     R = Yeni Oyun";
         lblYardim.TextAlign = ContentAlignment.MiddleLeft;
         //
@@ -165,7 +165,7 @@ partial class OyunFormu
         //
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(800, 588);
+        ClientSize = new Size(880, 588);
         Controls.Add(oyunPaneli);
         Controls.Add(lblYardim);
         Controls.Add(pnlUst);

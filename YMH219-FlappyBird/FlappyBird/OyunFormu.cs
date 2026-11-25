@@ -6,6 +6,11 @@ namespace FlappyBird;
 
 public partial class OyunFormu : Form
 {
+    // Oyun mantığı sabit bir mantıksal alanda çalışır; çizim panel boyutuna ölçeklenir.
+    // Böylece farklı ekran DPI ayarlarında oyun aynı şekilde oynanır.
+    private const float MantiksalGenislik = 880f;
+    private const float MantiksalYukseklik = 520f;
+
     private OyunMotoru _motor = null!;
     private readonly SkorKaydedici _skorKaydedici = new();
     private readonly SesEfektleri _ses = new();
@@ -23,7 +28,7 @@ public partial class OyunFormu : Form
 
     private void OyunFormu_Load(object? sender, EventArgs e)
     {
-        _motor = new OyunMotoru(oyunPaneli.ClientSize.Width, oyunPaneli.ClientSize.Height, _skorKaydedici.Oku());
+        _motor = new OyunMotoru(MantiksalGenislik, MantiksalYukseklik, _skorKaydedici.Oku());
         _motor.SkorDegisti += Motor_SkorDegisti;
         _motor.OyunBitti += Motor_OyunBitti;
 
@@ -167,6 +172,8 @@ public partial class OyunFormu : Form
         var g = e.Graphics;
         g.SmoothingMode = SmoothingMode.AntiAlias;
         g.TextRenderingHint = TextRenderingHint.AntiAlias;
+        g.ScaleTransform(oyunPaneli.ClientSize.Width / MantiksalGenislik,
+                         oyunPaneli.ClientSize.Height / MantiksalYukseklik);
 
         ArkaPlaniCiz(g);
         foreach (var boru in _motor.Borular)
